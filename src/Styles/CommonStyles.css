@@ -1,0 +1,17 @@
+.theme-font-family{
+    font-family: cursive;
+}
+
+.viewport{
+    width: 80%;
+    margin: 0 auto 20px;
+}
+
+.heading{
+     font-weight: bold;
+     font-size: 2.1rem;
+}
+
+body{
+    background-color: whitesmoke;
+}
