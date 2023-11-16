@@ -1,0 +1,41 @@
+.navigation-container{
+    background-color: rgb(20, 20, 20);
+    position: fixed;
+    top: 30px;
+    right: 0;
+    padding: 20px 30px;
+    width: 340px;
+    transform: translateX(400px);
+    transition: transform 0.2s ease-in-out, border-radius 0.5s ease-out;
+    border-radius: 100% 0 0 100%;
+}
+
+.navigation-options{
+    color: whitesmoke;
+    padding: 10px 0;
+    border-bottom: solid 2px rgb(100, 100, 100);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.navigation-options:is(:last-child){
+    padding-bottom: none;
+    border: none;
+}
+.navigation-options:is(:first-child){
+    padding-top: none;
+}
+.navigation-options:hover{
+    color: rgb(150, 150, 150);
+}
+
+.show-hide-navigation-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    transform: translateX(-50px);
+    background-color: black;
+    cursor: pointer;
+    border-radius: 15px 0 0 15px;
+}

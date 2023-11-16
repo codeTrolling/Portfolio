@@ -1,5 +1,18 @@
+:root{
+    --border-color: rgb(119, 70, 255);
+}
+
 .theme-font-family{
     font-family: cursive;
+    font-size: 1.2rem;
+}
+
+.flex{
+    display: flex;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
 }
 
 .viewport{
@@ -8,8 +21,12 @@
 }
 
 .heading{
-     font-weight: bold;
-     font-size: 2.1rem;
+    font-weight: bold;
+    font-size: 2.1rem;
+    align-self: center;
+    text-align: center;
+    width: 100%;
+    border-bottom: solid 5px var(--border-color);
 }
 
 body{
