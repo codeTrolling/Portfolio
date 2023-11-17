@@ -1,0 +1,37 @@
+.skills-container{
+    background-color: rgb(20 20 20);
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 8px;
+}
+::-webkit-scrollbar-track{
+    background: #888; 
+  }
+::-webkit-scrollbar-thumb{
+    background: var(--border-color); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(179, 151, 255);
+}
+
+@media only screen and (max-width: 700px){
+    ::-webkit-scrollbar{
+        height: 4px;
+    }
+}
+
+.skill{
+    font-size: 1.5rem;
+    color: white;
+    border-right: solid 2px var(--border-color);
+    padding: 5px 25px;
+    transition: 0.2s;
+}
+.skill:is(:last-child){
+    border: none;
+}
