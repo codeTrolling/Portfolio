@@ -8,6 +8,7 @@
     transform: translateX(400px);
     transition: transform 0.2s ease-in-out, border-radius 0.5s ease-out;
     border-radius: 100% 0 0 100%;
+    z-index: 5;
 }
 
 .navigation-options{
@@ -38,4 +39,5 @@
     background-color: black;
     cursor: pointer;
     border-radius: 15px 0 0 15px;
+    z-index: 5;
 }
