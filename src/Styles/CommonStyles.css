@@ -18,6 +18,7 @@
 .viewport{
     width: 80%;
     margin: 0 auto 20px;
+    transition: 2s linear;
 }
 
 .heading{
