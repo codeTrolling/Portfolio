@@ -1,7 +1,7 @@
 import "../Styles/NavigationStyles.css";
 import { useState } from "react";
 
-const Navigation = () => {
+const Navigation = ({aboutRef, skillsRef}) => {
     const [showNavigation, setShowNavigation] = useState(false);
     const [borderRadiuses, setBorderRadiuses] = useState("100% 0 0 100%");
 
@@ -14,11 +14,16 @@ const Navigation = () => {
         }
     }
 
+    const scrollToComponent = (componentRef) => {
+        componentRef.current.scrollIntoView({behavior: "smooth"});
+        console.log(componentRef.current)
+    }
+
     return(
         <div className="flex-column navigation-container" style={{transform: showNavigation ? "translateX(0)" : "translateX(400px)", borderRadius: borderRadiuses, transition: showNavigation ? "transform 0.3s ease-in-out, border-radius 0.6s ease-out" : "transform 0.3s ease-in-out, border-radius 0.6s ease-in"}}>
             <button className="show-hide-navigation-btn" onClick={() => {setShowNavigation(!showNavigation); navigationBorders()}}></button>
-            <label className="theme-font-family navigation-options">About</label>
-            <label className="theme-font-family navigation-options">Skills</label>
+            <label className="theme-font-family navigation-options" onClick={() => scrollToComponent(aboutRef)}>About</label>
+            <label className="theme-font-family navigation-options" onClick={() => scrollToComponent(skillsRef)}>Skills</label>
             <label className="theme-font-family navigation-options">Beginning</label>
             <label className="theme-font-family navigation-options">Learning proccess</label>
             <label className="theme-font-family navigation-options">Projects</label>

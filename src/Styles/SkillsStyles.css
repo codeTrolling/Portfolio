@@ -2,25 +2,27 @@
     background-color: rgb(20 20 20);
     overflow-x: auto;
     white-space: nowrap;
+    border-radius: 10px;
+    margin-top: 3px;
 }
 
-::-webkit-scrollbar{
+.skills-container::-webkit-scrollbar{
     width: 10px;
     height: 8px;
 }
-::-webkit-scrollbar-track{
+.skills-container::-webkit-scrollbar-track{
     background: #888; 
   }
-::-webkit-scrollbar-thumb{
+.skills-container::-webkit-scrollbar-thumb{
     background: var(--border-color); 
     border-radius: 10px;
 }
-::-webkit-scrollbar-thumb:hover{
+.skills-container::-webkit-scrollbar-thumb:hover{
     background-color: rgb(179, 151, 255);
 }
 
 @media only screen and (max-width: 700px){
-    ::-webkit-scrollbar{
+    .skills-container::-webkit-scrollbar{
         height: 4px;
     }
 }

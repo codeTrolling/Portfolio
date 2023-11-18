@@ -1,11 +1,11 @@
 import "../Styles/SkillsStyles.css";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, forwardRef } from "react";
 
-const Skills = () => {
+const Skills = forwardRef((props, viewportRef) => {
 
     //hide component if out of screen (and show it if it's in the screen)
-    const viewportRef = useRef();
-    const [isOnScreen, setIsOnScreen] = useState(true);
+    //const viewportRef = useRef();
+    const [isOnScreen, setIsOnScreen] = useState(false);
     window.addEventListener("scroll", () => {
         if(viewportRef.current !== undefined && (viewportRef.current.getBoundingClientRect().bottom <= 0 || viewportRef.current.getBoundingClientRect().top >= window.innerHeight)){
             setIsOnScreen(false);
@@ -69,6 +69,10 @@ const Skills = () => {
         isOnScreen ? showSkills() : hideSkills()
     }, [isOnScreen, intervalStarted])
 
+    useEffect(() => {
+        setIsOnScreen(true)
+    },[])
+
 
     return(
         <div className="viewport flex-column" ref={viewportRef} style={{opacity: isOnScreen ? "1" : "0", transition: isOnScreen ? "all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)" : "all 1s linear", transform: isOnScreen ? "translateX(0)" : "translate(100px)"}}>
@@ -105,6 +109,8 @@ const Skills = () => {
             </div>
         </div>
     )
-}
+})
+
+
 
 export default Skills;

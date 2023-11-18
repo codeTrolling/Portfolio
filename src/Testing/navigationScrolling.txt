@@ -1,0 +1,2 @@
+currently using forwardRef.
+if something breaks in the future try to remove it from the components. currently unsure about how exactly it works
