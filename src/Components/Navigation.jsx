@@ -1,7 +1,7 @@
 import "../Styles/NavigationStyles.css";
 import { useState } from "react";
 
-const Navigation = ({aboutRef, skillsRef}) => {
+const Navigation = ({aboutRef, skillsRef, beginningRef}) => {
     const [showNavigation, setShowNavigation] = useState(false);
     const [borderRadiuses, setBorderRadiuses] = useState("100% 0 0 100%");
 
@@ -24,7 +24,7 @@ const Navigation = ({aboutRef, skillsRef}) => {
             <button className="show-hide-navigation-btn" onClick={() => {setShowNavigation(!showNavigation); navigationBorders()}}></button>
             <label className="theme-font-family navigation-options" onClick={() => scrollToComponent(aboutRef)}>About</label>
             <label className="theme-font-family navigation-options" onClick={() => scrollToComponent(skillsRef)}>Skills</label>
-            <label className="theme-font-family navigation-options">Beginning</label>
+            <label className="theme-font-family navigation-options" onClick={() => scrollToComponent(beginningRef)}>Beginning</label>
             <label className="theme-font-family navigation-options">Learning proccess</label>
             <label className="theme-font-family navigation-options">Projects</label>
             <label className="theme-font-family navigation-options">For aspiring programmers</label>

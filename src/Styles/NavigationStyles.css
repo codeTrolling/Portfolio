@@ -40,4 +40,8 @@
     cursor: pointer;
     border-radius: 15px 0 0 15px;
     z-index: 5;
+    border: none;
+}
+.show-hide-navigation-btn:active{
+    border: none;
 }

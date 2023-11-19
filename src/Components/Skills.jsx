@@ -75,7 +75,7 @@ const Skills = forwardRef((props, viewportRef) => {
 
 
     return(
-        <div className="viewport flex-column" ref={viewportRef} style={{opacity: isOnScreen ? "1" : "0", transition: isOnScreen ? "all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)" : "all 1s linear", transform: isOnScreen ? "translateX(0)" : "translate(100px)"}}>
+        <div className="viewport flex-column" ref={viewportRef} style={{opacity: isOnScreen ? "1" : "0", transition: isOnScreen ? "all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)" : "all 1s linear", transform: isOnScreen ? "translateX(0)" : "translate(100px)", marginBottom:"70px"}}>
             <h2 className="theme-font-family heading">Skills</h2>
             <label className="theme-font-family">As of writing this, I am confident with these languages:</label>
             <div className="flex skills-container">

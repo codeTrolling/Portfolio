@@ -1,0 +1,44 @@
+.tic-tac-toe-board{
+    background-color: rgb(20 20 20);
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: center;
+    width: 90px;
+}
+
+.tic-tac-toe-field{
+    width: 30px;
+    height: 30px;
+    border-right: solid 1px rgb(100, 100, 100);
+    border-bottom: solid 1px rgb(100, 100, 100);
+    color: whitesmoke;
+    text-align: center;
+}
+.tic-tac-toe-field:is(:last-child){
+    border-right: none;
+}
+.flex:is(:last-child) .tic-tac-toe-field{
+    border-bottom: none;
+}
+
+.restart-tic-tac-toe-btn{
+    margin-left: 30px;
+    border-radius: 7px;
+    border: solid 2px var(--border-color);
+    cursor: pointer;
+}
+.restart-tic-tac-toe-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.tic-tac-toe-input{
+    background-color: black;
+    color: white;
+    border: solid 2px var(--border-color);
+    border-radius: 10px;
+    text-indent: 3px;
+}
+.tic-tac-toe-input:focus{
+    outline: none;
+}
