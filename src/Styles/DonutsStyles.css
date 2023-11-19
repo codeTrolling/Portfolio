@@ -1,0 +1,77 @@
+.run-donut-btn{
+    width: 80px;
+    font-size: 0.9rem;
+    text-align: center;
+    color: black;
+    background-color: rgb(0, 226, 94);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 28px;
+}
+
+
+.spinning-donut{
+    align-self: center;
+    width: 300px;
+    height: 300px;
+    border: solid 4px white;
+    border-radius: 50%;
+    transform-origin: center;
+    display: flex;
+    justify-content: space-around;
+}
+.spinning-donut-text{
+    color: white;
+    font-size: 2rem;
+}
+.donut-char-0{
+    transform: translate(90px, 40px) rotate(-50deg);
+}
+.donut-char-1{
+    transform: translate(40px, 10px) rotate(-30deg);
+}
+.donut-char-3{
+    transform: translate(-40px, 10px) rotate(30deg);
+}
+.donut-char-4{
+    transform: translate(-90px, 40px) rotate(50deg);
+}
+
+.donut-container2{
+    margin-top: 10px;
+    align-self: center;
+    transition: 0.5s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes spin{
+    from{
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+    12.5%{
+        transform: rotate3d(1, 1, 1, 45deg);
+    }
+    25%{
+        transform: rotate3d(1, 1, 1, 90deg);
+    }
+    37.5%{
+        transform: rotate3d(1, 1, 1, 135deg);
+    }
+    50%{
+        transform: rotate3d(1, 1, 1, 180deg);
+    }
+    62.5%{
+        transform: rotate3d(1, 1, 1, 225deg);
+    }
+    75%{
+        transform: rotate3d(1, 1, 1, 270deg);
+    }
+    87.5%{
+        transform: rotate3d(1, 1, 1, 315deg);
+    }
+    to{
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}

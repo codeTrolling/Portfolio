@@ -28,6 +28,11 @@
     text-align: center;
     width: 100%;
     border-bottom: solid 5px var(--border-color);
+    border-radius: 0;
+    transition: 1s;
+}
+.heading:hover{
+    border-radius: 60%;
 }
 
 body{

@@ -1,7 +1,7 @@
 import "../Styles/NavigationStyles.css";
 import { useState } from "react";
 
-const Navigation = ({aboutRef, skillsRef, beginningRef}) => {
+const Navigation = ({aboutRef, skillsRef, beginningRef, learningRef}) => {
     const [showNavigation, setShowNavigation] = useState(false);
     const [borderRadiuses, setBorderRadiuses] = useState("100% 0 0 100%");
 
@@ -16,7 +16,6 @@ const Navigation = ({aboutRef, skillsRef, beginningRef}) => {
 
     const scrollToComponent = (componentRef) => {
         componentRef.current.scrollIntoView({behavior: "smooth"});
-        console.log(componentRef.current)
     }
 
     return(
@@ -25,7 +24,7 @@ const Navigation = ({aboutRef, skillsRef, beginningRef}) => {
             <label className="theme-font-family navigation-options" onClick={() => scrollToComponent(aboutRef)}>About</label>
             <label className="theme-font-family navigation-options" onClick={() => scrollToComponent(skillsRef)}>Skills</label>
             <label className="theme-font-family navigation-options" onClick={() => scrollToComponent(beginningRef)}>Beginning</label>
-            <label className="theme-font-family navigation-options">Learning proccess</label>
+            <label className="theme-font-family navigation-options" onClick={() => scrollToComponent(learningRef)}>Learning process</label>
             <label className="theme-font-family navigation-options">Projects</label>
             <label className="theme-font-family navigation-options">For aspiring programmers</label>
         </div>

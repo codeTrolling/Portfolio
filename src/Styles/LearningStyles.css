@@ -1,0 +1,15 @@
+.donut-container{
+    background-color: rgb(20 20 20);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.program-file-name{
+    background-color: rgb(20 20 20);
+    cursor: pointer;
+    padding: 5px 10px;
+    border-top: solid 2px rgb(50 50 50);
+}
+.program-file-name:hover{
+    background-color: rgb(50 50 50);
+}
