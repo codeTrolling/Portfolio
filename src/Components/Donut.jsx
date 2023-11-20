@@ -22,7 +22,6 @@ const Donut = () => {
                 <span className="spinning-donut-text donut-char-3">U</span>
                 <span className="spinning-donut-text donut-char-4">T</span>
             </div>
-
         </div>
         </>
     )
