@@ -4,7 +4,6 @@ import { useState, useRef, useEffect, forwardRef } from "react";
 const Skills = forwardRef((props, viewportRef) => {
 
     //hide component if out of screen (and show it if it's in the screen)
-    //const viewportRef = useRef();
     const [isOnScreen, setIsOnScreen] = useState(false);
     window.addEventListener("scroll", () => {
         if(viewportRef.current !== undefined && (viewportRef.current.getBoundingClientRect().bottom <= 0 || viewportRef.current.getBoundingClientRect().top >= window.innerHeight)){
@@ -20,7 +19,6 @@ const Skills = forwardRef((props, viewportRef) => {
     const [confidentFrameworks, setConfidentFrameworks] = useState([]);
     const [familiarLanguages, setFamiliarLanguages] = useState([]);
     const [confidentDatabases, setConfidentDatabases] = useState([]);
-    //const [lastInterval, setLastInterval] = useState();
     const [intervalStarted, setIntervalStarted] = useState(false);
 
     useEffect(() => {

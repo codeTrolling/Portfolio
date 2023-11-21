@@ -4,7 +4,6 @@ import { useRef, useState, forwardRef } from "react";
 const About = forwardRef((props, viewportRef) => {
 
     //hide component if out of screen (and show it if it's in the screen)
-    //const viewportRef = useRef();
     const [isOnScreen, setIsOnScreen] = useState(true);
     window.addEventListener("scroll", () => {
         if(viewportRef.current !== undefined && (viewportRef.current.getBoundingClientRect().bottom <= 0 || viewportRef.current.getBoundingClientRect().top >= window.innerHeight)){
