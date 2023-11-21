@@ -1,4 +1,3 @@
-# Still under development!
 ## My portfolio
 My personal portfolio website to demonstrate my skills, talk about myself and walk you through my learning journey.
 
