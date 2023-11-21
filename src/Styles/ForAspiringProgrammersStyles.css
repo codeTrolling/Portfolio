@@ -1,0 +1,16 @@
+.hello-world-container{
+    width: 100%;
+    background-color: rgb(20 20 20);
+    border-radius: 10px;
+    padding: 40px 20px;
+}
+
+.code-container{
+    padding-bottom: 50px;
+    border-bottom: solid 2px rgb(100 100 100);
+}
+
+.code-letters{
+    opacity: 0;
+    transition: all 0.2s;
+}

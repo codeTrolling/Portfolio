@@ -64,7 +64,6 @@ const Skills = forwardRef((props, viewportRef) => {
             setConfidentDatabases([]);
             setIntervalStarted(false);
         }
-        console.log("are we spamming?")
 
         isOnScreen ? showSkills() : hideSkills()
     }, [isOnScreen, intervalStarted])

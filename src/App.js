@@ -7,6 +7,7 @@ import Skills from "./Components/Skills";
 import Beginning from "./Components/Beginning";
 import Learning from "./Components/Learning";
 import Projects from "./Components/Projects";
+import ForAspiringProgrammers from "./Components/ForAspiringProgrammers";
 
 function App() {
   const skillsRef = useRef();
@@ -14,14 +15,16 @@ function App() {
   const beginningRef = useRef();
   const learningRef = useRef();
   const projectsRef = useRef();
+  const forProgrammersRef = useRef();
   return (
     <>
-    <Navigation skillsRef={skillsRef} aboutRef={aboutRef} beginningRef={beginningRef} learningRef={learningRef} projectsRef={projectsRef}/>
+    <Navigation skillsRef={skillsRef} aboutRef={aboutRef} beginningRef={beginningRef} learningRef={learningRef} projectsRef={projectsRef} forProgrammersRef={forProgrammersRef}/>
     <About ref={aboutRef}/>
     <Skills ref={skillsRef}/>
     <Beginning ref={beginningRef}/>
     <Learning ref={learningRef}/>
     <Projects ref={projectsRef}/>
+    <ForAspiringProgrammers ref={forProgrammersRef}/>
     </>
   );
 }
