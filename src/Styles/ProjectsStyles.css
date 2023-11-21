@@ -1,0 +1,28 @@
+/* This is for testing purposes. no need to look at this and it might never be used
+.react-logo-img{
+    width: 300px;
+    height: 300px;
+    margin: 10px auto 0;
+    animation: react-spin infinite;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    transition: 0.2s linear;
+}
+
+@keyframes react-spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}*/
+
+.react-logo-image{
+    width: 300px;
+    height: 300px;
+    margin: 10px auto 0;
+    transition: all 1s linear;
+    transform: rotate(0deg);
+}

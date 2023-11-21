@@ -1,7 +1,7 @@
 import "../Styles/NavigationStyles.css";
 import { useState } from "react";
 
-const Navigation = ({aboutRef, skillsRef, beginningRef, learningRef}) => {
+const Navigation = ({aboutRef, skillsRef, beginningRef, learningRef, projectsRef}) => {
     const [showNavigation, setShowNavigation] = useState(false);
     const [borderRadiuses, setBorderRadiuses] = useState("100% 0 0 100%");
 
@@ -25,7 +25,7 @@ const Navigation = ({aboutRef, skillsRef, beginningRef, learningRef}) => {
             <label className="theme-font-family navigation-options" onClick={() => scrollToComponent(skillsRef)}>Skills</label>
             <label className="theme-font-family navigation-options" onClick={() => scrollToComponent(beginningRef)}>Beginning</label>
             <label className="theme-font-family navigation-options" onClick={() => scrollToComponent(learningRef)}>Learning process</label>
-            <label className="theme-font-family navigation-options">Projects</label>
+            <label className="theme-font-family navigation-options" onClick={() => scrollToComponent(projectsRef)}>Projects</label>
             <label className="theme-font-family navigation-options">For aspiring programmers</label>
         </div>
     )
