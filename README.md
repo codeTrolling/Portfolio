@@ -6,7 +6,11 @@ This website will contain some information about myself (my profile), pictures o
 I will also walk you through my learning process (which language I started with, how I studied, how I evolved etc.)
 
 ## How to run this website: 
-This portfolio is created using React.js. In order to run it, open up a terminal and go into the folder you have saved this project in and type: ```npm start```
+You need to have Node.js installed to run this.
+
+If you have it installed, go to the project's folder and type ```npm i``` or ```npm install```. This should install all the dependencies needed for this app to run.
+
+This portfolio is created using React.js. In order to run it after you have installed all the dependencies, you need to open up a terminal and go into the folder you have saved this project in and type: ```npm start```
 This will run a server at port 3000 and open up your browser. Might take a little bit of time.
 
 Sample: Let's say your path is: C:\codeTrolling\Portfolio
