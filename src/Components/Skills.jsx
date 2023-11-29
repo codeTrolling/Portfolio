@@ -32,7 +32,7 @@ const Skills = forwardRef((props, viewportRef) => {
                         setConfidentLanguages(c => [...c, true])
                         counter++;
                     }
-                    else if(counter2 < 5){
+                    else if(counter2 < 6){
                         setConfidentFrameworks(c => [...c, true]);
                         counter2++;
                     }
@@ -77,20 +77,22 @@ const Skills = forwardRef((props, viewportRef) => {
             <label className="theme-font-family">As of writing this, I am confident with these languages:</label>
             <div className="flex skills-container">
                 <label className="theme-font-family skill" style={{opacity: confidentLanguages[0] !== undefined ? "1" : "0", transform: confidentLanguages[0] !== undefined ? "translate(0px)" : "translate(20px)"}}>JavaScript</label>
-                <label className="theme-font-family skill" style={{opacity: confidentLanguages[1] !== undefined ? "1" : "0", transform: confidentLanguages[1] !== undefined ? "translate(0px)" : "translate(20px)"}}>HTML</label>
-                <label className="theme-font-family skill" style={{opacity: confidentLanguages[2] !== undefined ? "1" : "0", transform: confidentLanguages[2] !== undefined ? "translate(0px)" : "translate(20px)"}}>CSS</label>
-                <label className="theme-font-family skill" style={{opacity: confidentLanguages[3] !== undefined ? "1" : "0", transform: confidentLanguages[3] !== undefined ? "translate(0px)" : "translate(20px)"}}>C#</label>
-                <label className="theme-font-family skill" style={{opacity: confidentLanguages[4] !== undefined ? "1" : "0", transform: confidentLanguages[4] !== undefined ? "translate(0px)" : "translate(20px)"}}>Python</label>
-                <label className="theme-font-family skill" style={{opacity: confidentLanguages[5] !== undefined ? "1" : "0", transform: confidentLanguages[5] !== undefined ? "translate(0px)" : "translate(20px)"}}>C++</label>
+                <label className="theme-font-family skill" style={{opacity: confidentLanguages[1] !== undefined ? "1" : "0", transform: confidentLanguages[1] !== undefined ? "translate(0px)" : "translate(20px)"}}>TypeScript</label>
+                <label className="theme-font-family skill" style={{opacity: confidentLanguages[2] !== undefined ? "1" : "0", transform: confidentLanguages[2] !== undefined ? "translate(0px)" : "translate(20px)"}}>HTML</label>
+                <label className="theme-font-family skill" style={{opacity: confidentLanguages[3] !== undefined ? "1" : "0", transform: confidentLanguages[3] !== undefined ? "translate(0px)" : "translate(20px)"}}>CSS</label>
+                <label className="theme-font-family skill" style={{opacity: confidentLanguages[4] !== undefined ? "1" : "0", transform: confidentLanguages[4] !== undefined ? "translate(0px)" : "translate(20px)"}}>C#</label>
+                <label className="theme-font-family skill" style={{opacity: confidentLanguages[5] !== undefined ? "1" : "0", transform: confidentLanguages[5] !== undefined ? "translate(0px)" : "translate(20px)"}}>Python</label>
+                <label className="theme-font-family skill" style={{opacity: confidentLanguages[6] !== undefined ? "1" : "0", transform: confidentLanguages[6] !== undefined ? "translate(0px)" : "translate(20px)"}}>C++</label>
             </div>
 
             <label className="theme-font-family">As well as these frameworks:</label>
             <div className="flex skills-container">
                 <label className="theme-font-family skill" style={{opacity: confidentFrameworks[0] !== undefined ? "1" : "0", transform: confidentFrameworks[0] !== undefined ? "translate(0px)" : "translate(20px)"}}>React.js</label>
-                <label className="theme-font-family skill" style={{opacity: confidentFrameworks[1] !== undefined ? "1" : "0", transform: confidentFrameworks[1] !== undefined ? "translate(0px)" : "translate(20px)"}}>Express.js</label>
-                <label className="theme-font-family skill" style={{opacity: confidentFrameworks[2] !== undefined ? "1" : "0", transform: confidentFrameworks[2] !== undefined ? "translate(0px)" : "translate(20px)"}}>Mongoose.js</label>
-                <label className="theme-font-family skill" style={{opacity: confidentFrameworks[3] !== undefined ? "1" : "0", transform: confidentFrameworks[3] !== undefined ? "translate(0px)" : "translate(20px)"}}>.NET Web API</label>
-                <label className="theme-font-family skill" style={{opacity: confidentFrameworks[4] !== undefined ? "1" : "0", transform: confidentFrameworks[4] !== undefined ? "translate(0px)" : "translate(20px)"}}>Entity Framework</label>
+                <label className="theme-font-family skill" style={{opacity: confidentFrameworks[1] !== undefined ? "1" : "0", transform: confidentFrameworks[1] !== undefined ? "translate(0px)" : "translate(20px)"}}>Next.js</label>
+                <label className="theme-font-family skill" style={{opacity: confidentFrameworks[2] !== undefined ? "1" : "0", transform: confidentFrameworks[2] !== undefined ? "translate(0px)" : "translate(20px)"}}>Express.js</label>
+                <label className="theme-font-family skill" style={{opacity: confidentFrameworks[3] !== undefined ? "1" : "0", transform: confidentFrameworks[3] !== undefined ? "translate(0px)" : "translate(20px)"}}>Mongoose.js</label>
+                <label className="theme-font-family skill" style={{opacity: confidentFrameworks[4] !== undefined ? "1" : "0", transform: confidentFrameworks[4] !== undefined ? "translate(0px)" : "translate(20px)"}}>.NET Web API</label>
+                <label className="theme-font-family skill" style={{opacity: confidentFrameworks[5] !== undefined ? "1" : "0", transform: confidentFrameworks[5] !== undefined ? "translate(0px)" : "translate(20px)"}}>Entity Framework</label>
             </div>
 
             <label className="theme-font-family">I am also familiar with these languages (I have used them):</label>
