@@ -28,7 +28,7 @@ const Skills = forwardRef((props, viewportRef) => {
                 setIntervalStarted(true);
                 var counter = 0, counter2 = 0, counter3 = 0, counter4 = 0;
                 lastInterval = (setInterval(() => {
-                    if(counter < 6){
+                    if(counter < 7){
                         setConfidentLanguages(c => [...c, true])
                         counter++;
                     }

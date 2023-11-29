@@ -42,3 +42,9 @@
 .tic-tac-toe-input:focus{
     outline: none;
 }
+
+@media (max-width: 600px){
+    .tic-tac-toe-input{
+        width: 140px;
+    }
+}

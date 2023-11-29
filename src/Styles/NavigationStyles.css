@@ -45,3 +45,12 @@
 .show-hide-navigation-btn:active{
     border: none;
 }
+
+@media (max-width: 600px){
+    .navigation-container{
+        width: 250px;
+    }
+    .navigation-options{
+        font-size: 1.15rem;
+    }
+}
