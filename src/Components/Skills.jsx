@@ -32,7 +32,7 @@ const Skills = forwardRef((props, viewportRef) => {
                         setConfidentLanguages(c => [...c, true])
                         counter++;
                     }
-                    else if(counter2 < 6){
+                    else if(counter2 < 8){
                         setConfidentFrameworks(c => [...c, true]);
                         counter2++;
                     }
@@ -93,6 +93,8 @@ const Skills = forwardRef((props, viewportRef) => {
                 <label className="theme-font-family skill" style={{opacity: confidentFrameworks[3] !== undefined ? "1" : "0", transform: confidentFrameworks[3] !== undefined ? "translate(0px)" : "translate(20px)"}}>Mongoose.js</label>
                 <label className="theme-font-family skill" style={{opacity: confidentFrameworks[4] !== undefined ? "1" : "0", transform: confidentFrameworks[4] !== undefined ? "translate(0px)" : "translate(20px)"}}>.NET Web API</label>
                 <label className="theme-font-family skill" style={{opacity: confidentFrameworks[5] !== undefined ? "1" : "0", transform: confidentFrameworks[5] !== undefined ? "translate(0px)" : "translate(20px)"}}>Entity Framework</label>
+                <label className="theme-font-family skill" style={{opacity: confidentFrameworks[6] !== undefined ? "1" : "0", transform: confidentFrameworks[6] !== undefined ? "translate(0px)" : "translate(20px)"}}>Redux</label>
+                <label className="theme-font-family skill" style={{opacity: confidentFrameworks[7] !== undefined ? "1" : "0", transform: confidentFrameworks[7] !== undefined ? "translate(0px)" : "translate(20px)"}}>Jest.js</label>
             </div>
 
             <label className="theme-font-family">I am also familiar with these languages (I have used them):</label>
